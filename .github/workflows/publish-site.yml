@@ -1,4 +1,4 @@
-name: Site deployment
+name: Jekyll site deployment
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  jekyll:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
