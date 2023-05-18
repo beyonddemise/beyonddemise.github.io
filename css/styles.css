@@ -140,6 +140,9 @@ h1, .h1 {
 }
 h1 span {
   color: var(--brand);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 91.5%;
+  text-shadow: 2px 3px 4px rgba(0,0,0,0.5);
 }
 
 h2, .h2 {
@@ -2861,8 +2864,8 @@ textarea.form-control-lg {
   --bs-btn-color: var(--lightest);
   --bs-btn-bg: transparent; 
   --bs-btn-border-color: var(--lightest);
-  --bs-btn-hover-color: var(--dark);
-  --bs-btn-hover-bg: var(--lightest);
+  --bs-btn-hover-color: var(--darkest);
+  --bs-btn-hover-bg: var(--brand);
   --bs-btn-hover-border-color: var(--darkest);
   --bs-btn-focus-shadow-rgb: 74, 111, 111;
   --bs-btn-active-color: var(--lightest);
@@ -10926,7 +10929,13 @@ video.bg-video {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: calc(1rem + 2px);
+  color: var(--mid);
 }
+.masthead .masthead-content .input-group-newsletter button:hover,
+.masthead .masthead-content .input-group-newsletter button:active {
+  color: var(--dark);
+}
+
 
 @media (min-width: 992px) {
   .masthead {
@@ -10969,6 +10978,17 @@ video.bg-video {
   height: 4rem;
   width: 4rem;
   border-radius: 100rem;
+  background-color: transparent;
+  color: var(--mid);
+  border: 1px solid var(--mid);
+}
+.social-icons .btn:hover,
+.social-icons .btn:active {
+  background-color: var(--brand);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+  transition: ease-in-out 0.3s;
 }
 
 @media (min-width: 992px) {

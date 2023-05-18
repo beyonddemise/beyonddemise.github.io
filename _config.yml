@@ -1,1 +1,4 @@
-title: BeyondDemise coming soon
+plugins:
+  - jekyll-seo-tag
+
+include: [_redirects]
