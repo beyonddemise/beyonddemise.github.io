@@ -26,16 +26,22 @@
     width: 430px;
   }
   .sp-form[sp-id="224290"] .sp-form-control {
-    background: #ffffff;
+    background-color: transparent;
     border-color: #dde2ee;
+    border-radius: 50px;
     border-style: solid;
     border-width: 1px;
+    border: 3px solid #ffffff;
+    box-sizing: border-box;
+    /* color: #ff7853; */
+    color: #4dd1ba;
+    display: block;
     font-size: 15px;
-    padding-left: 8.75px;
+    height: 37px;
+    overflow: hidden;
+    padding-left: 1rem;
     padding-right: 8.75px;
-    border-radius: 4px;
-    height: 35px;
-    width: 100%;
+    width: 270px;
   }
   .sp-form[sp-id="224290"] .sp-field label {
     color: #444444;
@@ -47,29 +53,31 @@
     border-radius: 4px;
   }
   .sp-form[sp-id="224290"] .sp-button {
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0.25rem !important;
-    border: 1px solid var(--mid);
+    align-items: center;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
     box-shadow: none;
-    color: var(--mid);
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
     font-style: normal;
     font-weight: 700;
-    height: auto;
-    padding: 1rem !important;
+    height: 37px;
+    justify-content: center;
     line-height: 1.4rem !important;
-    width: auto;
+    padding: 10px 20px 10px 20px !important;
+    width: min-content;
   }
   .sp-form[sp-id="224290"] .sp-button:hover,
   .sp-form[sp-id="224290"] .sp-button:active {
-    background-color: var(--brand);
-    border-color: var(--dark);
-    box-shadow: 2px 3px 4px rgba(0,0,0,0.5) !important;
+    box-shadow: 5px -5px 0 0 #ffffff !important;
     transition: ease-in-out 0.3s !important;
   }
   .sp-form[sp-id="224290"] .sp-button-container {
-    text-align: left;
+    /* text-align: left;
     margin-right: -3rem !important;
-    margin-left: 0.5rem !important;
+    margin-left: 0.5rem !important; */
   }
 
 </style>
@@ -95,7 +103,7 @@
               sp-type="email"
               name="sform[email]"
               class="sp-form-control form-control"
-              placeholder="Your email"
+              placeholder="Enter your email..."
               sp-tips="%7B%22required%22%3A%22Enter%20your%20email%20⤴%22%2C%22wrong%22%3A%22Wrong%20email%22%7D"
               autocomplete="on"
               required="required"
@@ -108,9 +116,9 @@
         >
           <button
             id="sp-33e6cd3a-2836-4658-b766-3d7f099fcf2f"
-            class="sp-button btn btn-primary"
+            class="sp-button"
           >
-            NOTIFY ME!
+            Notify me
           </button>
         </div>
       </form>
