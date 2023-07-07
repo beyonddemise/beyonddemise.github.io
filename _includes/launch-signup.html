@@ -4,17 +4,15 @@
     display: none;
   }
   .sp-form[sp-id="224290"] {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 8px;
-    display: block;
-    font-family: Roboto, "Helvetica Neue", sans-serif !important;
-    max-width: 100%;
+    background-color: transparent !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    border-radius: 0px !important;
+    margin-left: -1.5rem !important;
+    max-width: 100% !important;
     padding: 0 2rem 0 0 !important;
-    width: 100%;
-    margin-left: -0.5rem !important;
+    width: 100% !important;
   }
   .sp-form[sp-id="224290"] input[type="checkbox"] {
     display: inline-block;
@@ -23,25 +21,21 @@
   }
   .sp-form[sp-id="224290"] .sp-form-fields-wrapper {
     margin: 0 auto;
-    width: 430px;
+    width: 440px;
   }
+
+  /* EMAIL FIELD */
   .sp-form[sp-id="224290"] .sp-form-control {
-    background-color: transparent;
-    border-color: #dde2ee;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 1px;
-    border: 3px solid #ffffff;
-    box-sizing: border-box;
-    /* color: #ff7853; */
-    color: #4dd1ba;
-    display: block;
-    font-size: 15px;
-    height: 37px;
-    overflow: hidden;
-    padding-left: 1rem;
-    padding-right: 8.75px;
-    width: 270px;
+    background-color: transparent !important;
+    border-radius: 50px !important;
+    border: 3px solid #ffffff !important;
+    font-size: 15px !important;
+    padding: 0 1rem !important;
+    height: 37px !important;
+    width: 300px !important;
+    overflow: hidden !important;
+    color: #ffffff;
+    font-weight: bold;
   }
   .sp-form[sp-id="224290"] .sp-field label {
     color: #444444;
@@ -50,24 +44,25 @@
     font-weight: bold;
   }
   .sp-form[sp-id="224290"] .sp-button-messengers {
-    border-radius: 4px;
+    border-radius: 25px;
   }
+
+  /* NOTIFY BUTTON */
   .sp-form[sp-id="224290"] .sp-button {
-    align-items: center;
-    background-color: transparent;
-    border-radius: 30px;
-    border: 3px solid #ffffff;
-    box-shadow: none;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: flex;
-    font-style: normal;
-    font-weight: 700;
-    height: 37px;
-    justify-content: center;
+    align-items: center !important;
+    background-color: transparent !important;
+    border-radius: 30px !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    display: flex !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    height: 37px !important;
+    justify-content: center !important;
     line-height: 1.4rem !important;
     padding: 10px 20px 10px 20px !important;
-    width: min-content;
+    width: auto !important;
   }
   .sp-form[sp-id="224290"] .sp-button:hover,
   .sp-form[sp-id="224290"] .sp-button:active {
@@ -75,43 +70,79 @@
     transition: ease-in-out 0.3s !important;
   }
   .sp-form[sp-id="224290"] .sp-button-container {
-    /* text-align: left;
-    margin-right: -3rem !important;
-    margin-left: 0.5rem !important; */
+    text-align: left;
   }
 
-</style>
+  /* EMAIL FIELD: TABLET STYLES */
+  @media (min-width: 768px) and (max-width: 1400px) and (orientation: landscape) {
+    .sp-form[sp-id="224290"] .sp-form-control {
+      background-color: rgba(255, 255, 255, 0.8) !important;
+    }
+    .sp-field input::placeholder {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
 
+  /* MOBILE STYLES, PORTRAIT MODE */
+  @media (max-width: 767px) and (orientation: portrait) {
+    /* main form */
+    .sp-form[sp-id="224290"] {
+      background: linear-gradient(180deg, rgba(23, 5, 26, 0) 0%, rgb(0, 0, 0) 100%) !important;
+      border: 0;
+      bottom: 0;
+      left: 0;
+      margin: 0 0 0 !important;
+      position: fixed;
+    }
+    /* wrapper for email field and button */
+    .sp-form[sp-id="224290"] .sp-form-fields-wrapper {
+      align-items: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      height: 350px !important;
+      justify-content: flex-end !important;
+      margin-left: 1.5rem !important;
+    }
+    /* email field */
+    .sp-form[sp-id="224290"] .sp-form-control {
+      width: 85vw !important;
+      height: 45px !important;
+    }
+    /* notify button */
+    .sp-form[sp-id="224290"] .sp-button {
+      width: 85vw !important;
+      height: 45px !important;
+    }
+  }
+</style>
 <div class="sp-form-outer sp-force-hide">
   <div
     id="sp-form-224290"
     sp-id="224290"
     sp-hash="8bf8df51c5088fc1e55e4271860800141920030ce39d0b267ab8f7a4cfa0b9f0"
     sp-lang="en"
-    class="sp-form sp-form-regular sp-form-embed sp-form-horizontal"
+    class="sp-form sp-form-regular sp-form-embed sp-form-full-width sp-form-horizontal"
     sp-show-options="%7B%22satellite%22%3Afalse%2C%22maDomain%22%3A%22login.sendpulse.com%22%2C%22formsDomain%22%3A%22forms.sendpulse.com%22%2C%22condition%22%3A%22onEnter%22%2C%22scrollTo%22%3A25%2C%22delay%22%3A10%2C%22repeat%22%3A3%2C%22background%22%3A%22rgba(0%2C%200%2C%200%2C%200.5)%22%2C%22position%22%3A%22bottom-right%22%2C%22animation%22%3A%22%22%2C%22hideOnMobile%22%3Afalse%2C%22submitRedirectUrl%22%3A%22%22%2C%22urlFilter%22%3Afalse%2C%22urlFilterConditions%22%3A%5B%7B%22force%22%3A%22hide%22%2C%22clause%22%3A%22contains%22%2C%22token%22%3A%22%22%7D%5D%2C%22analytics%22%3A%7B%22ga%22%3A%7B%22eventLabel%22%3A%22Coming_Soon_Beyond_Demise%22%2C%22send%22%3Afalse%7D%2C%22ym%22%3A%7B%22counterId%22%3Anull%2C%22eventLabel%22%3Anull%2C%22targetId%22%3Anull%2C%22send%22%3Afalse%7D%7D%2C%22utmEnable%22%3Afalse%7D"
   >
-    <div class="row input-group-newsletter">
+    <div class="sp-form-fields-wrapper show-grid">
+      <div class="sp-message"><div></div></div>
       <form novalidate="" class="sp-element-container sp-field-nolabel">
-        <div
-          class="sp-field"
-          sp-id="sp-233e23c3-2258-4ff0-9fff-a98570f096a9"
-        >
-          <div class="col">
-            <input
-              type="email"
-              sp-type="email"
-              name="sform[email]"
-              class="sp-form-control form-control"
-              placeholder="Enter your email..."
-              sp-tips="%7B%22required%22%3A%22Enter%20your%20email%20⤴%22%2C%22wrong%22%3A%22Wrong%20email%22%7D"
-              autocomplete="on"
-              required="required"
-            />
-          </div>
+        <div class="sp-field" sp-id="sp-233e23c3-2258-4ff0-9fff-a98570f096a9">
+          <label class="sp-control-label"
+            ><span>Email</span></label
+          ><input
+            type="email"
+            sp-type="email"
+            name="sform[email]"
+            class="sp-form-control"
+            placeholder="Enter your email..."
+            sp-tips="%7B%22required%22%3A%22Enter%20your%20email%20⤴%22%2C%22wrong%22%3A%22Wrong%20email%22%7D"
+            autocomplete="on"
+            required="required"
+          />
         </div>
         <div
-          class="sp-field sp-button-container col-auto"
+          class="sp-field sp-button-container"
           sp-id="sp-33e6cd3a-2836-4658-b766-3d7f099fcf2f"
         >
           <button
@@ -122,9 +153,13 @@
           </button>
         </div>
       </form>
+      <div class="sp-link-wrapper sp-brandname__left"></div>
     </div>
   </div>
 </div>
-
-<script type="text/javascript" async="async" src="//web.webformscr.com/apps/fc3/build/default-handler.js?1680250029423"></script>
+<script
+  type="text/javascript"
+  async="async"
+  src="//web.webformscr.com/apps/fc3/build/default-handler.js?1680250029423"
+></script>
 <!-- /Subscription Form -->

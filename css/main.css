@@ -62,10 +62,6 @@ body {
   font-family: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
-i.bi {
-  color: var(--neutral-light);
-  font-size: 1.4rem;
-}
 h1 {
   color: var(--neutral-light) !important;
   font-family: 'Pretendard', sans-serif;
@@ -132,8 +128,10 @@ nav {
 }
 
 /* COMING SOON PAGE STYLES */
-.coming-soon {
+.coming-soon,
+.signup {
   margin-left: 8.1875rem;
+  max-width: 500px;
 }
 .gradient-text {
   background-color: var(--neutral-light);

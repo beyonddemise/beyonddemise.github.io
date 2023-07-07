@@ -1,24 +1,55 @@
-  /* 'small':  ( max-width:  428px ),
-  'medium': ( max-width:  1019px ),
-  'large':  ( min-width: 1200px ) */
-
-/* IPAD, IPAD MINI, AND OTHER TABLETS  */
-@media (min-width: 760px) and (max-width: 1400px) {
+/* MOBILE STYLES */
+@media (max-width: 767px) {
+  /* GLOBAL STYLES */
   .content-container {
+    background-image: url(/assets/images/BeyondDemiseMobileTopSection.jpg);
     border: none;
     height: 100vh;
     width: 100vw;
     margin: 0;
+    overflow: scroll;
   }
 
+  /* HEADER STYLES */
+  nav {
+    margin: 2rem 1.75rem 2rem 2rem;
+  }
+  .header-socials {
+    & a {
+      margin-right: 0.25rem !important;
+    }
+    & svg {
+    height: 1.5rem;
+    }
+  }
+  .description {
+    max-width: 308px;
+  }
+
+  /* COMING SOONG PAGE STYLES */
+  .coming-soon {
+    margin-left: 2.9375rem;
+  }
+  .coming-soon h6 {
+    font-size: 0.5rem;
+  }
+  .coming-soon h1 {
+    font-size: 1.5rem;
+  }
+  .coming-soon p {
+    font-size: 0.875rem;
+  }
 }
 
-@media (min-width: 760px) and (max-width: 1400px) and (orientation: landscape) {
-  .sp-field input {
-    background-color: rgba(255, 255, 255, 0.85) !important;
-  }
-  .sp-field input::placeholder {
-    color: rgba(0, 0, 0, 0.7);
+/* TABLET STYLES */
+@media (min-width: 768px) and (max-width: 1400px) {
+  .content-container {
+    background-image: url(/assets/images/TopSectionOnly.jpg);
+    border: none;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: scroll;
   }
 }
 
