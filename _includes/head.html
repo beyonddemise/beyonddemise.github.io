@@ -1,46 +1,32 @@
 <!-- HTML Meta Tags  -->
-{% if page.title  %}
-  <title>{{ page.title }} | Beyond Demise®</title>
-{% else %}
-  <title>Beyond Demise® | Safeguard Your Digital Legacy</title>
-{% endif %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% if page.description %}
-  <meta property="og:description" content="{{ page.description }}">
-{% else %}
-  <meta property="og:description" content="Preserve your digital legacy securely with Beyond Demise. Store and share your secrets with trusted individuals after you're gone. Take control of your online assets.">
-{% endif %}
+<title>Beyond Demise® | Safeguard Your Digital Legacy</title>
+<meta name="description" content="Store your private data and release them to a trusted party upon your death. And, inform faraway friends & family of your demise.">
 
-<meta property="og:type" content="article">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:image" content="https://beyonddemise.com{{ page.hero }}">
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://www.beyonddemise.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Beyond Demise® | Safeguard Your Digital Legacy">
+<meta property="og:description" content="Store your private data and release them to a trusted party upon your death. And, inform faraway friends & family of your demise.">
+<meta property="og:image" content="https://www.beyonddemise.com/assets/images/FB_ogimage.png">
 
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@beyond_demise">
 <meta property="twitter:domain" content="beyonddemise.com">
-<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-<!-- <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{{ page.subtitle }}{% else %}{{ site.title }}{% endif %}"> -->
-<meta property="twitter:title" content="{% if page.title %}{{ page.title }}{{ page.subtitle }}{% else %}{{ site.title }}{% endif %}">
-<!-- <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}"> -->
-<meta property="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="https://beyonddemise.com{{ page.hero }}">
+<meta property="twitter:url" content="https://www.beyonddemise.com">
+<meta name="twitter:title" content="Beyond Demise® | Safeguard Your Digital Legacy">
+<meta name="twitter:description" content="Store your private data and release them to a trusted party upon your death. And, inform faraway friends & family of your demise.">
+<meta name="twitter:image" content="https://www.beyonddemise.com/assets/images/FB_ogimage.png">
+<meta name="twitter:site" content="@beyond_demise" />
 
-<!-- Facebook Meta Tags -->
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 
-  
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/main.css">
