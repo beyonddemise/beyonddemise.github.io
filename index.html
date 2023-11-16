@@ -1,26 +1,106 @@
 ---
 layout: default
 ---
-<div class="coming-soon">
-  <h6>COMING SOON</h6>
-  <div class="title">
-    <h1>What happens to</h1>
-    <h1>your secrets <span class="gradient-text">when you die?</span>
+<!-- Hero -->
+<section class="hero">
+  <div class="coming-soon">
+    <h6>Trusted and Secure</h6>
+    <div class="title">
+      <h1>What happens to</h1>
+      <h1>your secrets <span class="gradient-text">when you die?</span></h1>
+    </div>
+    <div class="description mt-4">
+      <p><strong>With our secure web app, you can store your private data and release them to a trusted party upon your death. And, inform faraway friends & family of your demise.</strong></p>
 
-    </h1>
+      <p class="mb-4">Join the waitlist and get notified when we launch!</p>
+    </div>
   </div>
-  <div class="description mt-4">
-    <p>With our secure web app, you can store your private data and release them to a trusted party upon your death.</p>
-    
-    <p>And, inform faraway friends & family of your demise.</p>
 
-    <p class="mb-4">Join the waitlist and get notified when we launch!</p>
+  <div class="signup">
+    {% include launch-signup.html %}
   </div>
-</div>
+</section>
 
-<div class="signup">
-  {% include launch-signup.html %}
-</div>
+<!-- Benefits -->
+<section class="benefits">
+  <div class="grid">
+    <div></div>
+    <div>
+      <span class="circle"></span>
+      <span class="line"></span>
+    </div>
+    <div>
+      <h6>SIMPLE AND EASY</h6>
+      <h2>How does it work?</h2>
+      <p>BeyondDemise is designed to be simple and easy to use. Simply create an account, upload your secrets, and assign the trusted individuals who will receive it upon your passing. Once you're set up, you can rest assured that your digital legacy is secure and will be handled according to your wishes.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <h6>EVERLASTING INFORMATION</h6>
+      <h2>Why does it matter?</h2>
+      <p>In today's digital age, we store most of our important information online. This includes personal documents, financial records, social media accounts, and precious memories. When we pass away, this information can become inaccessible to our loved ones, leaving them without the important details they need to settle our affairs and preserve our legacies.<br><br>
+      BeyondDemise ensures that your digital assets are safe and easily accessible to your chosen beneficiaries, providing peace of mind for both you and your loved ones.</p>
+    </div>
+    <div>
+      <span class="circle"></span>
+      <span class="line"></span>
+    </div>
+    <div></div>
+  </div>
+
+  <div class="grid">
+    <div></div>
+    <div>
+      <span class="circle"></span>
+      <span class="line"></span>
+    </div>
+    <div>
+      <h6>TRUSTWORTHY</h6>
+      <h2>You can trust us</h2>
+      <p>BeyondDemise employs industry-leading encryption techniques to protect your information, ensuring that your digital legacy remains confidential and secure. Our commitment to safeguarding your privacy is unwavering, allowing you to use our app with complete peace of mind.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <h6>Testimonials</h6>
+  <h1>What are people saying?</h1>
+  <!-- https://every-layout.dev/layouts/reel/ -->
+</section>
+
+<!-- CTA -->
+<section class="footer-cta">
+  <h6>Join the waitlist</h6>
+  <h1>Your secrets are <span class="gradient-text">safe with us.</span></h1>
+  <p>You deserve a stress-free digital afterlife. Join the waitlist today and get notified when we launch.</p>
+  <div class="signup">
+    {% include launch-signup.html %}
+  </div>
+</section>
 
 <!-- Signup form -->
 <script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="8bf8df51c5088fc1e55e4271860800141920030ce39d0b267ab8f7a4cfa0b9f0"></script>
+
+<script>
+document.addEventListener("scroll", function() {
+  var lines = document.querySelectorAll(".benefits .grid .line");
+  var windowHeight = window.innerHeight;
+
+  lines.forEach(function(line) {
+    var rect = line.parentElement.getBoundingClientRect();
+    var containerHeight = rect.height; // Get the height of the container
+
+    var isVisible = rect.top < windowHeight * 0.7 && rect.bottom >= 0;
+
+    // Calculate the height based on visibility, capped by the container's height
+    var height = isVisible ? Math.min(containerHeight - 20, containerHeight) + "px" : "0";
+
+    // Set the height and opacity
+    line.style.height = height;
+    line.style.opacity = isVisible ? 1 : 0;
+  });
+});
+</script>

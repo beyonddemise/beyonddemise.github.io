@@ -52,6 +52,19 @@
   --accent: #9f4a7b;
   --neutral-dark: #17051a;
   --neutral-light: #ffffff;
+
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
 }
 
 /* GLOBAL STYLES */
@@ -62,7 +75,7 @@ body {
   font-family: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
-h1 {
+h1, h2 {
   color: var(--neutral-light) !important;
   font-family: 'Pretendard', sans-serif;
   font-size: 2.25rem;
@@ -72,22 +85,22 @@ h1 {
 h6 {
   color: var(--primary) !important;
   font-family: 'Pretendard', sans-serif;
-  font-size: 0.625rem;
-  font-weight: 400 !important;
-  letter-spacing: 0.3rem;
+  font-size: x-small !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2rem;
   line-height: 1.2rem;
+  text-transform: uppercase;
 }
 p, ul, li {
   color: var(--neutral-light) !important;
   font-family: 'Pretendard', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   word-break: break-word;
   overflow-wrap: break-word;
 }
-
 .content-container {
-  background-image: url(/assets/images/TopSectionOnly.jpg);
+  background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,7 +110,6 @@ p, ul, li {
   border-width: 3px 3px 0 3px;
   box-sizing: border-box;
   flex: 1 1 auto;
-  height: 97vh;
   margin: 3vh auto 0;
   overflow: hidden;
   width: 85vw;
@@ -127,7 +139,7 @@ nav {
   }
 }
 
-/* COMING SOON PAGE STYLES */
+/* LANDING PAGE STYLES */
 .coming-soon,
 .signup {
   margin-left: 8.1875rem;
@@ -153,7 +165,7 @@ nav {
     opacity: 1;
   }
 }
-.description {
+.coming-soon .description {
   max-width: 450px;
   line-height: 1.2;
 }
@@ -162,4 +174,65 @@ nav {
   line-height: 1.2;
   padding-left: 1rem;
 }
+.hero {
+  height: 100vh;
+}
+.benefits {
+  color: var(--neutral-light);
+  margin: 0 7rem 10rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px; /* Adjust the gap as needed */
+}
+.grid > div:nth-child(1),
+.grid > div:nth-child(3) {
+  padding: 0 2rem;
+}
+.grid > div:nth-child(2) {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  margin: 1rem 3rem;
+  position: relative;
+}
+.grid p {
+  color: var(--neutral-light) !important;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+  padding-bottom: 8rem;
+  padding-top: 1.5rem;
+  word-break: break-word;
+}
+.circle {
+  border-radius: 100%;
+  border: 3px solid var(--neutral-light);
+  height: 15px;
+  margin: 1rem 0;
+  width: 15px;
+  z-index: 1;
+}
+.line {
+  border-left: 3px solid var(--neutral-light);
+  bottom: 0;
+  height: 100%; /* Start with a height of 100% */
+  left: 0;
+  margin-left: 6px;
+  opacity: 1; /* Start with opacity 1 */
+  position: absolute;
+  top: 50px;
+  transition: height 3s ease, opacity 3s ease;
+}
+.testimonials,
+.footer-cta {
+  text-align: center;
+}
+
+
+
 
