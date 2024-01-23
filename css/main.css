@@ -1,47 +1,47 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-Thin.otf);
   font-weight: 100;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-ExtraLight.otf);
   font-weight: 200;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-Light.otf);
   font-weight: 300;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-Regular.otf);
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-Medium.otf);
   font-weight: 500;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-SemiBold.otf);
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-Bold.otf);
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-ExtraBold.otf);
   font-weight: 800;
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   src: url(/assets/fonts/Pretendard-Black.otf);
   font-weight: 900;
 }
@@ -72,32 +72,39 @@ body {
   background: linear-gradient(180deg, var(--neutral-dark) 0%, #000000 100%);
   display: flex;
   flex-direction: column;
-  font-family: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI", Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
+    "Roboto", "Segoe UI", Oxygen, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
-h1, h2 {
+h1,
+h2 {
   color: var(--neutral-light) !important;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   font-size: 2.25rem;
   font-weight: 800 !important;
   line-height: 1.2rem;
 }
 h6 {
   color: var(--primary) !important;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   font-size: x-small !important;
   font-weight: 600 !important;
   letter-spacing: 0.2rem;
   line-height: 1.2rem;
   text-transform: uppercase;
 }
-p, ul, li {
+p,
+ul,
+li {
   color: var(--neutral-light) !important;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  word-break: break-word;
+  line-height: 1.5;
   overflow-wrap: break-word;
+  word-break: break-word;
 }
 .content-container {
   background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
@@ -152,7 +159,7 @@ nav {
   background-repeat: repeat;
   font-weight: 300;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   animation: fade-in 2s ease-in;
@@ -167,7 +174,6 @@ nav {
 }
 .coming-soon .description {
   max-width: 450px;
-  line-height: 1.2;
 }
 .sp-field input::placeholder {
   color: rgba(255, 255, 255, 0.3);
@@ -176,6 +182,12 @@ nav {
 }
 .hero {
   height: 100vh;
+}
+.hero .learn-more {
+  bottom: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .benefits {
   color: var(--neutral-light);
@@ -200,7 +212,7 @@ nav {
 }
 .grid p {
   color: var(--neutral-light) !important;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: 0;
@@ -232,7 +244,3 @@ nav {
 .footer-cta {
   text-align: center;
 }
-
-
-
-

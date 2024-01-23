@@ -18,11 +18,12 @@
       margin-right: 0.25rem !important;
     }
     & svg {
-    height: 1.5rem;
+      height: 1.5rem;
     }
   }
   .description {
-    max-width: 308px;
+    /* max-width: 308px; */
+    padding-right: 2rem;
   }
 
   /* LANDING PAGE STYLES */
@@ -50,4 +51,3 @@
     margin: 0;
   }
 }
-
