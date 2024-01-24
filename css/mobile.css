@@ -39,6 +39,34 @@
   .coming-soon p {
     font-size: 0.875rem;
   }
+  .benefits {
+    margin: 0;
+    padding: 0;
+  }
+  .benefits__grid {
+    display: flex;
+    & p {
+      padding-bottom: var(--s4);
+    }
+  }
+  .benefits__grid--left {
+    margin-right: -2rem;
+  }
+  .benefits__grid--right {
+    margin-left: -2rem;
+  }
+  .circle {
+    display: none;
+  }
+  .line {
+    margin: -1rem 0 0;
+    padding: 0;
+    top: 0;
+  }
+  .benefits__grid .empty {
+    display: none !important;
+    flex: 0;
+  }
 }
 
 /* TABLET STYLES */

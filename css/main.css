@@ -81,23 +81,21 @@ body {
 h1,
 h2 {
   color: var(--neutral-light) !important;
-  font-size: 2.25rem;
+  font-size: var(--s2) !important;
   font-weight: 800 !important;
-  line-height: 1.2rem;
 }
 h6 {
   color: var(--primary) !important;
-  font-size: x-small !important;
+  font-size: var(--s-1) !important;
   font-weight: 600 !important;
   letter-spacing: 0.2rem;
-  line-height: 1.2rem;
   text-transform: uppercase;
 }
 p,
 ul,
 li {
   color: var(--neutral-light) !important;
-  font-size: 1rem;
+  font-size: var(--s0) !important;
   font-weight: 300;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -150,6 +148,7 @@ nav {
   max-width: 500px;
 }
 .gradient-text {
+  animation: fade-in 2s ease-in;
   background-color: var(--neutral-light);
   background-image: linear-gradient(#ffffff 0%, #000000 100%);
   background-size: 100%;
@@ -159,7 +158,6 @@ nav {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  animation: fade-in 2s ease-in;
 }
 @keyframes fade-in {
   from {
@@ -190,16 +188,16 @@ nav {
   color: var(--neutral-light);
   margin: 0 7rem 10rem;
 }
-.grid {
+.benefits__grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 20px; /* Adjust the gap as needed */
 }
-.grid > div:nth-child(1),
-.grid > div:nth-child(3) {
+.benefits__grid > div:nth-child(1),
+.benefits__grid > div:nth-child(3) {
   padding: 0 2rem;
 }
-.grid > div:nth-child(2) {
+.benefits__grid > div:nth-child(2) {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -207,14 +205,14 @@ nav {
   margin: 1rem 3rem;
   position: relative;
 }
-.grid p {
+.benefits__grid p {
   color: var(--neutral-light) !important;
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: 0;
   overflow-wrap: break-word;
-  padding-bottom: 8rem;
-  padding-top: 1.5rem;
+  padding-bottom: var(--s5);
+  padding-top: var(--s1);
   word-break: break-word;
 }
 .circle {
