@@ -78,11 +78,47 @@ body {
   font-family: var(--system-ui) !important;
   font-weight: 400;
 }
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.stack > * {
+  margin-block: 0;
+}
+.stack > * + * {
+  margin-block-start: var(--s2, 1.5rem);
+}
+.bd-button {
+  align-items: center !important;
+  background-color: transparent !important;
+  border-radius: 30px !important;
+  border: 3px solid #ffffff !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  display: flex !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  height: 37px !important;
+  justify-content: center !important;
+  line-height: 1.4rem !important;
+  padding: 10px 20px 10px 20px !important;
+  width: fit-content !important;
+  margin-inline: auto;
+  &:hover,
+  &:active {
+    box-shadow: 5px -5px 0 0 #ffffff !important;
+    transition: ease-in-out 0.3s !important;
+  }
+}
+
+/* TYPOGRAPHY */
 h1,
 h2 {
   color: var(--neutral-light) !important;
   font-size: var(--s2) !important;
   font-weight: 800 !important;
+  text-wrap: balance;
 }
 h6 {
   color: var(--primary) !important;
@@ -90,6 +126,7 @@ h6 {
   font-weight: 600 !important;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 p,
 ul,
@@ -100,21 +137,6 @@ li {
   line-height: 1.5;
   overflow-wrap: break-word;
   word-break: break-word;
-}
-.content-container {
-  background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-color: var(--neutral-light);
-  border-radius: 2.5rem 2.5rem 0 0;
-  border-style: solid;
-  border-width: 3px 3px 0 3px;
-  box-sizing: border-box;
-  flex: 1 1 auto;
-  margin: 3vh auto 0;
-  overflow: hidden;
-  width: 85vw;
 }
 
 /* HEADER STYLES */
@@ -142,6 +164,21 @@ nav {
 }
 
 /* LANDING PAGE STYLES */
+.content-container {
+  background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: var(--neutral-light);
+  border-radius: 2.5rem 2.5rem 0 0;
+  border-style: solid;
+  border-width: 3px 3px 0 3px;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  margin: 3vh auto 0;
+  overflow: hidden;
+  width: 85vw;
+}
 .coming-soon,
 .signup {
   margin-left: 8.1875rem;
@@ -240,6 +277,9 @@ nav {
 }
 .footer-cta {
   text-align: center;
+  & a {
+    text-decoration: none;
+  }
 }
 .reel {
   display: flex;
@@ -268,7 +308,13 @@ nav {
 }
 .reel::-webkit-scrollbar-thumb {
   background-color: #000;
-  background-image: linear-gradient(#000 0, #000 0.25rem, #fff 0.25rem, #fff 0.75rem, #000 0.75rem);
+  background-image: linear-gradient(
+    #000 0,
+    #000 0.25rem,
+    #fff 0.25rem,
+    #fff 0.75rem,
+    #000 0.75rem
+  );
 }
 .reel > * {
   flex: 0 0 auto;
