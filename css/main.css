@@ -111,6 +111,9 @@ body {
     transition: ease-in-out 0.3s !important;
   }
 }
+footer {
+  padding-top: 5rem;
+}
 
 /* TYPOGRAPHY */
 h1,
@@ -134,7 +137,7 @@ li {
   color: var(--neutral-light) !important;
   font-size: var(--s0) !important;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.55;
   overflow-wrap: break-word;
   word-break: break-word;
 }
@@ -223,7 +226,8 @@ nav {
 }
 .benefits {
   color: var(--neutral-light);
-  margin: 0 7rem 10rem;
+  margin: -10rem 7rem 5rem;
+  border: 2px solid white;
 }
 .benefits__grid {
   display: grid;
@@ -287,7 +291,6 @@ nav {
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-color: #fff #000;
-  color: red;
 }
 .reel .card:first-of-type {
   margin-left: 1rem;
