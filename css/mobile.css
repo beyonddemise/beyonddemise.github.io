@@ -67,6 +67,16 @@
     display: none !important;
     flex: 0;
   }
+  footer p {
+    text-align: center;
+    text-wrap: balance;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-links {
+    justify-content: space-between;
+  }
 }
 
 /* TABLET STYLES */
