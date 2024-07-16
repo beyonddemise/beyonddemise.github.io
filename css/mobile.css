@@ -69,7 +69,7 @@
   }
   footer p {
     text-align: center;
-    text-wrap: balance;
+    /* text-wrap: balance; */
   }
   .footer-logo {
     display: none;
