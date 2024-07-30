@@ -67,6 +67,17 @@
     display: none !important;
     flex: 0;
   }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .steps .box {
+    & h3 {
+      margin-left: 0;
+    }
+    & ul {
+      margin: 0;
+    }
+  }
   footer p {
     text-align: center;
     /* text-wrap: balance; */
@@ -86,5 +97,8 @@
   }
   .benefits {
     margin: 0;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
