@@ -262,10 +262,7 @@ nav {
 
 /* LANDING PAGE STYLES */
 .content-container {
-  background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to bottom, var(--neutral-dark), #05161f, #00393e);
   border-color: var(--neutral-light);
   border-radius: 2.5rem 2.5rem 0 0;
   border-style: solid;
@@ -274,7 +271,13 @@ nav {
   flex: 1 1 auto;
   margin: 3vh auto 0;
   overflow: hidden;
-  width: 85vw;
+  width: 78vw;
+}
+.landing {
+  background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .coming-soon,
 .signup {
@@ -422,6 +425,13 @@ nav {
   margin-top: -2.5rem;
   text-wrap: balance;
   width: 2.5rem;
+}
+
+/* PAGE STYLES */
+.content {
+  margin: auto;
+  padding: 2rem 10rem;
+  text-wrap: balance;
 }
 
 /* FOOTER STYLES */

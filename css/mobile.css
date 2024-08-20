@@ -2,11 +2,13 @@
 @media (max-width: 1400px) {
   /* GLOBAL STYLES */
   .content-container {
-    background-image: url(/assets/images/BeyondDemiseMobile.jpg);
     border: none;
     margin: 0;
     overflow: scroll;
     width: 100vw;
+  }
+  .landing {
+    background-image: url(/assets/images/BeyondDemiseMobile.jpg);
   }
 
   /* HEADER STYLES */
@@ -80,19 +82,23 @@
   }
   footer p {
     text-align: center;
-    /* text-wrap: balance; */
   }
   .footer-logo {
-    display: none;
+    margin: auto;
   }
   .footer-links {
     justify-content: space-between;
+  }
+
+  /* PAGE STYLES */
+  .content {
+    padding: 2rem;
   }
 }
 
 /* TABLET STYLES */
 @media (min-width: 768px) and (max-width: 1400px) {
-  .content-container {
+  .landing {
     background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
   }
   .benefits {
@@ -100,5 +106,15 @@
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  footer p {
+    text-align: left;
+  }
+  .footer-logo {
+    display: block;
+    margin: unset;
+  }
+  .content {
+    padding: 2rem 5rem;
   }
 }
