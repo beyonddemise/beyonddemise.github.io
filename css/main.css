@@ -430,8 +430,7 @@ nav {
 /* PAGE STYLES */
 .content {
   margin: auto;
-  padding: 2rem 10rem;
-  text-wrap: balance;
+  padding: 2rem 15rem 2rem 10rem;
 }
 
 /* FOOTER STYLES */
