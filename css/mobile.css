@@ -1,0 +1,120 @@
+/* MOBILE STYLES */
+@media (max-width: 1400px) {
+  /* GLOBAL STYLES */
+  .content-container {
+    border: none;
+    margin: 0;
+    overflow: scroll;
+    width: 100vw;
+  }
+  .landing {
+    background-image: url(/assets/images/BeyondDemiseMobile.jpg);
+  }
+
+  /* HEADER STYLES */
+  nav {
+    margin: 2rem 1.75rem 2rem 2rem;
+  }
+  .header-socials {
+    & a {
+      margin-right: 0.25rem !important;
+    }
+    & svg {
+      height: 1.5rem;
+    }
+  }
+  .description {
+    padding-right: 2rem;
+  }
+
+  /* LANDING PAGE STYLES */
+  .coming-soon,
+  .signup {
+    margin-left: 2rem;
+  }
+  .coming-soon h6 {
+    font-size: 0.5rem;
+  }
+  .coming-soon h1 {
+    font-size: 1.5rem;
+  }
+  .coming-soon p {
+    font-size: 0.875rem;
+  }
+  .benefits {
+    margin: -5rem 0 0;
+    padding: 0;
+  }
+  .benefits__grid {
+    display: flex;
+    & p {
+      padding-bottom: var(--s4);
+    }
+  }
+  .benefits__grid--left {
+    margin-right: -2rem;
+  }
+  .benefits__grid--right {
+    margin-left: -2rem;
+  }
+  .circle {
+    display: none;
+  }
+  .line {
+    margin: -1rem 0 0;
+    padding: 0;
+    top: 0;
+  }
+  .benefits__grid .empty {
+    display: none !important;
+    flex: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .steps .box {
+    & h3 {
+      margin-left: 0;
+    }
+    & ul {
+      margin: 0;
+    }
+  }
+  footer p {
+    text-align: center;
+  }
+  .footer-logo {
+    margin: auto;
+  }
+  .footer-links {
+    justify-content: space-between;
+  }
+
+  /* PAGE STYLES */
+  .content {
+    padding: 2rem;
+  }
+}
+
+/* TABLET STYLES */
+@media (min-width: 768px) and (max-width: 1400px) {
+  .landing {
+    background-image: url(/assets/images/BeyondDemiseDesktop.jpg);
+  }
+  .benefits {
+    margin: 0;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer p {
+    text-align: left;
+  }
+  .footer-logo {
+    display: block;
+    margin: unset;
+  }
+  .content {
+    padding: 2rem 5rem;
+  }
+}
